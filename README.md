@@ -1,4 +1,4 @@
-# TAXI PI
+# PI RIDE
 <a><img align = "center" src = "https://i.imgur.com/bB8Jcmo.png" width = "50px"></a>
 <a><img align = "center" src = "https://i.imgur.com/dq2JVwT.png" width = "50px"></a>
 <a><img align = "center" src = "https://i.imgur.com/eYtLGWn.png" width = "50px"></a>
@@ -6,7 +6,7 @@
 <a><img align = "center" src = "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" width = "50px"></a>
 <a><img align = "center" src = "https://i.imgur.com/FnG4bvp.png" width = "50px"></a>
 
-Uber Clone built with React Native and Typescript. The UI consists of a search bar and two options, Uber Rides and Uber Eats. (Uber Eats has not been developed as yet) The user can select favourites which consist of home location and work location. After selecting a valid pick-up location and after clicking on Uber Rides, the user navigates to another screen which asks for the drop-location and after the user provides that, he/she navigates to another screen consisting of ride options each having parameters - type of vehicle, travel time and total fare. The user can select any one of the given ride options.
+PI RIDE built with React Native and Typescript. The UI consists of a search bar and two options, Uber Rides and Uber Eats. (Uber Eats has not been developed as yet) The user can select favourites which consist of home location and work location. After selecting a valid pick-up location and after clicking on Uber Rides, the user navigates to another screen which asks for the drop-location and after the user provides that, he/she navigates to another screen consisting of ride options each having parameters - type of vehicle, travel time and total fare. The user can select any one of the given ride options.
 
 ## Usage
 Navigate to the root directory and run
