@@ -1,4 +1,3 @@
-import { ScrollViewStyleReset } from 'expo-router/html';
 import { type PropsWithChildren } from 'react';
 
 /**
@@ -12,28 +11,45 @@ export default function Root({ children }: PropsWithChildren) {
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-        {/*
-          Disable body scrolling on web. This makes ScrollView components work closer to how they do on native.
-          However, body scrolling is often nice to have for mobile web. If you want to enable it, remove this line.
-        */}
-        <ScrollViewStyleReset />
-
-        {/* Using raw CSS styles as an escape-hatch to ensure the background color never flickers in dark-mode. */}
-        <style dangerouslySetInnerHTML={{ __html: responsiveBackground }} />
-        {/* Add any additional <head> elements that you want globally available on web... */}
+        
+        {/* Using raw CSS styles to change the background color and ensure button styling */}
+        <style dangerouslySetInnerHTML={{ __html: responsiveStyles }} />
       </head>
-      <body>{children}</body>
+      <body>
+        {/* Welcome Message */}
+        <h1 className="welcome-message">Welcome to PI RIDE</h1>
+
+        {/* Render the children components */}
+        {children}
+      </body>
     </html>
   );
 }
 
-const responsiveBackground = `
+const responsiveStyles = `
 body {
-  background-color: #fff;
+  background-color: #6a0dad; /* Set background color to purple */
+  color: white; /* Set text color to white */
+  font-family: Arial, sans-serif;
 }
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #000;
-  }
-}`;
+
+h1.welcome-message {
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+}
+
+button {
+  background-color: white; /* Set button background to white */
+  color: #6a0dad; /* Set button text color to purple */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #f0f0f0; /* Button hover effect */
+}
+`;
