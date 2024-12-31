@@ -1,0 +1,6 @@
+[build]
+  command = "npm run build"  # Perintah untuk build aplikasi React
+  publish = "build"  # Folder tempat build aplikasi React disimpan
+
+[build.environment]
+  NODE_ENV = "production"  # Mengatur environment untuk build production
